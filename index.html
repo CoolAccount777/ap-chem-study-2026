@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chemistry: Period 4 Elements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { margin: 0; padding: 0; background: #202020; font-family: sans-serif; overflow: hidden; }
+        #toolbar { background: #333; height: 40px; display: flex; align-items: center; padding: 0 10px; }
+        select { background: #444; color: white; border: 1px solid #666; padding: 5px; font-size: 14px; border-radius: 4px; }
+        .btn { margin-left: auto; color: #aaa; text-decoration: none; font-size: 12px; }
+        iframe { width: 100%; height: calc(100vh - 40px); border: none; }
+    </style>
+</head>
+<body>
+    <div id="toolbar">
+        <select onchange="document.getElementById('vidFrame').src = this.value">
+            <option value="https://yewtu.be">Server 1 (Yewtu)</option>
+            <option value="https://inv.nadeko.net">Server 2 (Nadeko)</option>
+            <option value="https://invidious.lunar.icu">Server 3 (Lunar)</option>
+            <option value="https://iv.melmac.space">Server 4 (Melmac)</option>
+        </select>
+        <a href="#" class="btn">AP Chemistry Ref v4.2</a>
+    </div>
+    
+    <iframe id="vidFrame" src="https://yewtu.be" allowfullscreen></iframe>
+</body>
+</html>
